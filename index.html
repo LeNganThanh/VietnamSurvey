@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Vietnam Survey</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/vietnam-flag-icon.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>How much do you about Vietnam</h1>
+      <p>We are very happy to get your opinions about Vietnam</p>
+    </div>
+    <section>
+      <form id="survey-form">
+        <div class="survey">
+          <label for="name">Name</label> <br />
+          <input
+            type="text"
+            id="name-label"
+            name="name"
+            placeholder="Enter your name" 
+            style="width: 650px; height: 35px;"
+          />
+        </div>
+        <div class="survey">
+         <br> <label for="email">Email</label> <br />
+          <input
+            type="email"
+            id="email-label"
+            name="email"
+            placeholder="Enter your email"
+            style="width: 650px; height: 35px;"
+          />
+        </div>
+        <div class="survey">
+         <br> <label for="age">Age (Survey for age up 5)</label> <br />
+          <input
+            type="number"
+            id="number-label"
+            name="age"
+            placeholder="Age"
+            min="5"
+            max="130"
+            style="width: 650px; height: 35px;"
+          />
+        </div>
+        <div class="survey">
+         <br> <label for="feel">How do you image about Vietnam</label><br />
+          <select required id="dropdown" style="width: 650px; height: 35px;">
+            <option value="" disabled selected hidden >Select an option</option>
+            <option value="0">An asia country</option>
+            <option value="1">A hot tropical country</option>
+            <option value="2">A country was under American army</option>
+          </select>
+        </div>
+        <p>Would you like to visit Vietnam?</p>
+        <div class="visit">
+          <input type="radio" name="visit" id="sure" />
+          <label for="visit">Definitely</label><br />
+          <input type="radio" id="maybe" name="visit" />
+          <label for="visit">Maybe</label><br />
+          <input type="radio" name="visit" id="notsure" />
+          <label for="visit">Not sure</label>
+        </div>
+        <p>Which way do you like to get close to Vietnam?</p>
+        <div class="way">
+          <input type="checkbox" name="travel" id="travel" />
+          <label for="travel">Travelling to Vietnam</label><br />
+          <input type="checkbox" name="newspaper" id="newspaper" />
+          <label for="newspaper">Reading news on newspaper</label><br />
+          <input type="checkbox" name="tv" id="tv" />
+          <label for="tv">Watching TV Documentation about Vietnam</label><br />
+          <input type="checkbox" name="food" id="food" />
+          <label for="food">Having Vietnamese dishes</label><br />
+          <input type="checkbox" name="people" id="people" />
+          <label for="people">Talking with Vietnamese</label>
+        </div>
+        <div class="suggest">
+          <br><label for="sugg">Some suggestions</label><br />
+          <textarea name="sugg" id="sugg" cols="30" rows="10" placeholder="Enter your comment here..." style="width: 650px; height: 150px;"></textarea>
+        </div> <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
