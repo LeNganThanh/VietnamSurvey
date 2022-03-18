@@ -12,6 +12,10 @@ body {
 .way {
   line-height: 2rem;
 }
+html{
+    background-image: url(images/VN-old-quater.jpeg);
+  background-size: cover;
+}
 section::before {
   content: "";
   position: fixed;
