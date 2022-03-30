@@ -13,80 +13,89 @@
     />
   </head>
   <body>
-    <div class="intro">
+    <div class="intro" >
       <h1>How much do you know about Vietnam</h1>
       <p>We are very happy to get your opinions about Vietnam</p>
     </div>
     <section>
-      <form id="survey-form">
+      <form id="survey-form" action="" method="post">
         <div class="survey">
-          <label for="name">Name</label> <br />
+          <label for="name">Name</label> 
           <input
             type="text"
             id="name-label"
             name="name"
-            placeholder="Enter your name" 
-            style="width: 650px; height: 35px;"
+            placeholder="Enter your name"
+            minlength="10"
+            maxlength="30"
+            required
           />
         </div>
         <div class="survey">
-         <br> <label for="email">Email</label> <br />
+          <label for="email">Email</label>
           <input
             type="email"
-            id="email-label"
+            id="email"
             name="email"
             placeholder="Enter your email"
-            style="width: 650px; height: 35px;"
+            required
           />
         </div>
         <div class="survey">
-         <br> <label for="age">Age (Survey for age up 5)</label> <br />
+          <label for="age">Age (Survey for age up 5)</label>
           <input
             type="number"
-            id="number-label"
+            id="age"
             name="age"
             placeholder="Age"
-            min="5"
-            max="130"
-            style="width: 650px; height: 35px;"
+            min="15"
+            max="80"
           />
         </div>
         <div class="survey">
-         <br> <label for="feel">How do you image about Vietnam</label><br />
-          <select required id="dropdown" style="width: 650px; height: 35px;">
-            <option value="" disabled selected hidden >Select an option</option>
-            <option value="0">An asia country</option>
-            <option value="1">A hot tropical country</option>
-            <option value="2">A country was under American army</option>
+          <label for="feel">How do you imagine about Vietnam</label>
+          <select required id="feel" name="opinions">
+            <option value="none" disabled selected hidden>Select an option</option>
+            <option value="asia-country">An asia country</option>
+            <option value="tropical-country">A hot tropical country</option>
+            <option value="american-war">A country was under American army</option>
           </select>
         </div>
         <p>Would you like to visit Vietnam?</p>
         <div class="visit">
-          <input type="radio" name="visit" id="sure" />
+          <input type="radio" name="visit" id="visit" value="definitely" checked/>
           <label for="visit">Definitely</label><br />
-          <input type="radio" id="maybe" name="visit" />
-          <label for="visit">Maybe</label><br />
-          <input type="radio" name="visit" id="notsure" />
-          <label for="visit">Not sure</label>
+          <input type="radio" id="maybe" name="visit" value="maybe"/>
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" name="visit" id="not" value="not-sure" />
+          <label for="not">Not sure</label>
         </div>
         <p>Which way do you like to get close to Vietnam?</p>
         <div class="way">
-          <input type="checkbox" name="travel" id="travel" />
-          <label for="travel">Travelling to Vietnam</label><br />
-          <input type="checkbox" name="newspaper" id="newspaper" />
+          <input type="checkbox" name="travel" id="travel" value="travel" />
+          <label for="travel">Traveling to Vietnam</label><br />
+          <input type="checkbox" name="travel" id="newspaper" value="newspaper" />
           <label for="newspaper">Reading news on newspaper</label><br />
-          <input type="checkbox" name="tv" id="tv" />
+          <input type="checkbox" name="travel" id="tv" value="tv" />
           <label for="tv">Watching TV Documentation about Vietnam</label><br />
-          <input type="checkbox" name="food" id="food" />
+          <input type="checkbox" name="travel" id="food" value="food"/>
           <label for="food">Having Vietnamese dishes</label><br />
-          <input type="checkbox" name="people" id="people" />
+          <input type="checkbox" name="travel" id="people" value="people" />
           <label for="people">Talking with Vietnamese</label>
         </div>
-        <div class="suggest">
-          <br><label for="sugg">Some suggestions</label><br />
-          <textarea name="sugg" id="sugg" cols="30" rows="10" placeholder="Enter your comment here..." style="width: 650px; height: 150px;"></textarea>
-        </div> <br>
-        <button type="submit">Submit</button>
+        <div class="survey">
+          <br /><label for="sugg">Some suggestions</label><br />
+          <textarea
+            name="sugg"
+            id="sugg"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <br />
+        <button>Submit</button>
       </form>
     </section>
   </body>
