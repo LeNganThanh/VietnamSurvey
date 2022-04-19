@@ -6,21 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Vietnam Survey</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/vietnam-flag-icon.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="images/vietnam-flag-icon.jpg" type="image/x-icon" />
   </head>
   <body>
-    <div class="intro" >
+    <div class="intro">
       <h1>How much do you know about Vietnam</h1>
       <p>We are very happy to get your opinions about Vietnam</p>
     </div>
-    <section>
+    <section aria-label="A survey about knowing Vietnam">
       <form id="survey-form" action="" method="post">
         <div class="survey">
-          <label for="name">Name</label> 
+          <label for="name">Name</label>
           <input
             type="text"
             id="name-label"
@@ -55,36 +51,67 @@
         <div class="survey">
           <label for="feel">How do you imagine about Vietnam</label>
           <select required id="feel" name="opinions">
-            <option value="none" disabled selected hidden>Select an option</option>
+            <option value="none" disabled selected hidden>
+              Select an option
+            </option>
             <option value="asia-country">An asia country</option>
             <option value="tropical-country">A hot tropical country</option>
-            <option value="american-war">A country was under American army</option>
+            <option value="american-war">
+              A country was under American army
+            </option>
           </select>
         </div>
         <p>Would you like to visit Vietnam?</p>
         <div class="visit">
-          <input type="radio" name="visit" id="visit" value="definitely" checked/>
-          <label for="visit">Definitely</label><br />
-          <input type="radio" id="maybe" name="visit" value="maybe"/>
-          <label for="maybe">Maybe</label><br />
-          <input type="radio" name="visit" id="not" value="not-sure" />
-          <label for="not">Not sure</label>
+          <div>
+            <input
+              type="radio"
+              name="visit"
+              id="visit"
+              value="definitely"
+              checked
+            />
+            <label for="visit">Definitely</label>
+          </div>
+          <div>
+            <input type="radio" id="maybe" name="visit" value="maybe" />
+            <label for="maybe">Maybe</label>
+          </div>
+          <div>
+            <input type="radio" name="visit" id="not" value="not-sure" />
+            <label for="not">Not sure</label>
+          </div>
         </div>
         <p>Which way do you like to get close to Vietnam?</p>
         <div class="way">
-          <input type="checkbox" name="travel" id="travel" value="travel" />
-          <label for="travel">Traveling to Vietnam</label><br />
-          <input type="checkbox" name="travel" id="newspaper" value="newspaper" />
-          <label for="newspaper">Reading news on newspaper</label><br />
-          <input type="checkbox" name="travel" id="tv" value="tv" />
-          <label for="tv">Watching TV Documentation about Vietnam</label><br />
-          <input type="checkbox" name="travel" id="food" value="food"/>
-          <label for="food">Having Vietnamese dishes</label><br />
-          <input type="checkbox" name="travel" id="people" value="people" />
-          <label for="people">Talking with Vietnamese</label>
+          <div>
+            <input type="checkbox" name="travel" id="travel" value="travel" />
+            <label for="travel">Traveling to Vietnam</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="travel"
+              id="newspaper"
+              value="newspaper"
+            />
+            <label for="newspaper">Reading news on newspaper</label>
+          </div>
+          <div>
+            <input type="checkbox" name="travel" id="tv" value="tv" />
+            <label for="tv">Watching TV Documentation about Vietnam</label>
+          </div>
+          <div>
+            <input type="checkbox" name="travel" id="food" value="food" />
+            <label for="food">Having Vietnamese dishes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="travel" id="people" value="people" />
+            <label for="people">Talking with Vietnamese</label>
+          </div>
         </div>
         <div class="survey">
-          <br /><label for="sugg">Some suggestions</label><br />
+          <label for="sugg">Some suggestions</label>
           <textarea
             name="sugg"
             id="sugg"
@@ -94,7 +121,6 @@
             placeholder="Enter your comment here..."
           ></textarea>
         </div>
-        <br />
         <button>Submit</button>
       </form>
     </section>

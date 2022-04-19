@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 1.3rem;
+  font-size: clamp(1rem,0.5rem + 1vw, 1.3rem);
   height: 100%;
   min-width: 500px;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,12 +31,12 @@ section::before {
   border: 0;
   background-image: url(images/VN-old-quater.jpeg);
   background-size: cover;
-  -webkit-filter: blur(15px);
-  filter: blur(15px);
+  -webkit-filter: blur(17);
+  filter: blur(7px);
 }
 /* setting the header */
 .intro {
-  width:45%;
+  width:80%;
   text-align: center;
   margin: 0 auto;
   color: rgb(230, 221, 161);
@@ -46,7 +46,7 @@ section::before {
 section {
   border: 1px solid rebeccapurple;
   background-color: rgba(255, 228, 196, 0.664);
-  width: 40%;
+  width: 80%;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -84,7 +84,11 @@ textarea::placeholder {
 .survey select{
   margin-top: 0.5rem;
 }
+textarea{
+  margin-top: 0.5rem;
+}
 button {
+  margin-top: 1rem;
   padding: 0.7rem;
   box-shadow: 1px 1px rgb(104, 101, 101);
   font-size: 1.3rem;
@@ -94,4 +98,53 @@ button:hover{
   font-weight: bold;
   color: aquamarine;
 }
+@media screen and (min-width: 376px) {
+  .intro{
+    width: 65%;
+  }
+  section{
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 465px) {
+  .intro{
+    width: 60%;
+  }
+  section{
+    width: 27rem;
+  }
 
+}
+@media screen and (min-width:576px) {
+  .intro{
+    width: 55%;
+  }
+  section{
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 687px) {
+  .intro{
+    width: 50%;
+  }
+  section{
+    width: 33rem;
+  }
+
+}
+@media screen and (min-width:786px) {
+  .intro{
+    width: 45%;
+  }
+  section{
+    width: 36rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .intro{
+    width: 45%;
+  }
+  section{
+    width: 40rem;
+  }
+}
